@@ -23,11 +23,18 @@ response_1 = input("\n Tu respuesta: ")
 while response_1 not in ("a", "b", "c", "d"):
   response_1 = input("Debes ingresar a, b, c o d. Responde nuevamente: ")
 
-if response_1 == "d":
+if response_1 == "a":
+  score -= 5
+  print("Incorrecto!", name, "Pero estás cerca. Ánimos!")
+elif response_1 == "b":
+  score -= 5
+  print("Incorrecto!", name, "Pero estás cerca. Ánimos!")
+elif response_1 == "c":
+  score -= 5
+  print("Incorrecto!", name, "Pero estás cerca. Ánimos!")
+else:
   score += 10
   print("Perfecto", name, "!")
-else:
-  print("Incorrecto!", name, "Pero estás cerca. Ánimos!")
 
 
 # Pregunta 2 Rpta:C
@@ -62,7 +69,7 @@ response_3 = input("\n Tu respuesta: ")
 while response_3 not in ("a", "b", "c", "d"):
   response_3 = input("Debes ingresar a, b, c o d. Responde nuevamente: ")
 
-if response_1 == "a":
+if response_3 == "a":
   score += 10
   print("Perfecto", name, "!")
 else:
